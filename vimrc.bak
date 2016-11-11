@@ -25,7 +25,7 @@ endif
 
 " Set Folding Options
 :set foldmethod=indent
-:set foldnestmax=1
+:set foldnestmax=10
 :set foldlevelstart=1
 
 " Completion options
@@ -40,4 +40,8 @@ let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 " Change the 81st column color to stand out
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
+
+" Remap : to ; for ease of ex commands
+nnoremap ; :
+
 
