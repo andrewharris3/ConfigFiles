@@ -1,4 +1,5 @@
 " This line should not be removed as it ensures that various options are
+
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
 
@@ -34,7 +35,9 @@ endif
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 
 " Change the register to the system clipboard
-:set clipboard=unnamedplus
 :set clipboard=unnamed
 
+" Change the 81st column color to stand out
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
 
