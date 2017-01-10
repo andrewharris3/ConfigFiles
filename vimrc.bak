@@ -41,7 +41,5 @@ let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
 
-" Remap : to ; for ease of ex commands
-nnoremap ; :
 
 
