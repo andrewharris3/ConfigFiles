@@ -19,9 +19,9 @@ endif
 
 " Set numbering, tabs, and background to dark
 :set expandtab      " tabs are spaces
-:set tabstop=4      " number of visual spaces per tab
-:set softtabstop=4  " number of spaces in tab when editing
-:set shiftwidth=4   " Indent corresponds to a single tab
+:set tabstop=2      " number of visual spaces per tab
+:set softtabstop=2  " number of spaces in tab when editing
+:set shiftwidth=2   " Indent corresponds to a single tab
 
 " Set Folding Options
 :set foldmethod=indent
