@@ -6,7 +6,7 @@ runtime! debian.vim
 filetype indent on
 
 syntax on
-:set number         " show line numbers
+set number         " show line numbers
 set background=dark
 set showmatch		" Show matching brackets.
 set ignorecase		" Do case insensitive matching
@@ -18,28 +18,28 @@ if filereadable("/etc/vim/vimrc.local")
 endif
 
 " Set numbering, tabs, and background to dark
-:set expandtab      " tabs are spaces
-:set tabstop=2      " number of visual spaces per tab
-:set softtabstop=2  " number of spaces in tab when editing
-:set shiftwidth=2   " Indent corresponds to a single tab
+set expandtab      " tabs are spaces
+set tabstop=4      " number of visual spaces per tab
+set softtabstop=4  " number of spaces in tab when editing
+set shiftwidth=4   " Indent corresponds to a single tab
 
 " Set Folding Options
-:set foldmethod=indent
-:set foldnestmax=10
-:set foldlevelstart=1
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za
 
 " Completion options
-:set completeopt=longest,menuone
+set completeopt=longest,menuone
 
 " Change the python path for YCM
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 
 " Change the register to the system clipboard
-:set clipboard=unnamed
+set clipboard=unnamed
 
 " Change the 81st column color to stand out
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
-
-
 
